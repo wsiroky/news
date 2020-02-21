@@ -16,12 +16,159 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <!-- Your own CSS -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>News</title>
   </head>
   <body>
-        <h1> <%= @headline1 %> </h1>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+
+<h1>News</h1>
+
+<div class="list-group">
+
+    <a href="<%= @link1 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline1 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description1 %></p>
+    <small><%= @link1 %></small>
+
+    <a href="<%= @link2 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline2 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description2 %></p>
+    <small><%= @link2 %></small>
+
+    <a href="<%= @link3 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline3 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description3 %></p>
+    <small><%= @link3 %></small>
+    
+    <a href="<%= @link3 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline3 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description3 %></p>
+    <small><%= @link3 %></small>
+    
+    <a href="<%= @link4 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline4 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description4 %></p>
+    <small><%= @link4 %></small>
+    
+    <a href="<%= @link5 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline5 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description5 %></p>
+    <small><%= @link5 %></small>
+    
+    <a href="<%= @link6 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline6 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description6 %></p>
+    <small><%= @link6 %></small>
+    
+    <a href="<%= @link7 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline7 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description7 %></p>
+    <small><%= @link7 %></small>
+    
+    <a href="<%= @link8 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline8 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description8 %></p>
+    <small><%= @link8 %></small>
+    
+    <a href="<%= @link9 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline9 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description9 %></p>
+    <small><%= @link9 %></small>
+    
+    <a href="<%= @link01 %>" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"><%= @headline10 %></h5>
+      <small>Click for link</small>
+    </div>
+    <p class="mb-1"><%= @description10 %></p>
+    <small><%= @link10 %></small>
+
+    </div>
+
+
+
+<div class="list-group">
+
+    <h1>Weather for <%= @city %></h1>
+
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Today is <%= @t1_day %>, <%= @t1_month %> <%= @t1_num %>, <%= @t1_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is <%= @t1_high_temp %> degrees and the conditions are <%= @t1_conditions %></p>
+    
+
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t2_day %>, <%= @t2_month %> <%= @t2_num %>, <%= @t2_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t2_high_temp %> degrees and the conditions are projected to be <%= @t2_conditions %></p>
+
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t3_day %>, <%= @t3_month %> <%= @t3_num %>, <%= @t3_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t3_high_temp %> degrees and the conditions are projected to be <%= @t3_conditions %></p>
+
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t4_day %>, <%= @t4_month %> <%= @t4_num %>, <%= @t4_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t4_high_temp %> degrees and the conditions are projected to be <%= @t4_conditions %></p>
+    
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t5_day %>, <%= @t5_month %> <%= @t5_num %>, <%= @t5_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t5_high_temp %> degrees and the conditions are projected to be <%= @t5_conditions %></p>    
+
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t6_day %>, <%= @t6_month %> <%= @t6_num %>, <%= @t6_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t6_high_temp %> degrees and the conditions are projected to be <%= @t6_conditions %></p>
+    
+    <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">For <%= @t7_day %>, <%= @t7_month %> <%= @t7_num %>, <%= @t7_year %>.</h5>
+    </div>
+    <p class="mb-1">The high temperature is projected to be <%= @t7_high_temp %> degrees and the conditions are projected to be <%= @t7_conditions %></p>    
+ 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
