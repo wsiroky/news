@@ -1,0 +1,11 @@
+body.newspaper {
+  background-color: linen;
+}
+
+body.ask {
+  background-color: lightcyan;
+}
+
+h1.ask {
+    color: gray
+    }
